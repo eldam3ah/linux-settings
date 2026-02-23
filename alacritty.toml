@@ -1,6 +1,8 @@
 [general]
+
 # GITHUB DARK DEFAULT THEME
 # Repo -> https://github.com/alacritty/alacritty-theme 
+
 [colors.primary]
 background = '#0d1117'
 foreground = '#b3b1ad'

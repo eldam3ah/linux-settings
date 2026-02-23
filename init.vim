@@ -12,15 +12,24 @@ call plug#end()
 " Nvim Gruvbox Plugin config
 set termguicolors
 set background=dark
+set clipboard=unnamedplus
 let g:gruvbox_material_transparent_background=2
 color gruvbox-material
 
 " Key binding
 nnoremap <C-q> :Oil <CR>
 nnoremap <C-tab> :tabnew <CR>
-nnoremap <M-x> :tabc <CR>
+nnoremap <M-x> :tabc <CR>k
 nnoremap <C-Right> gt <CR>
 nnoremap <C-Left> gT <CR>
+nnoremap <C-Up> :m .-2<CR>==
+nnoremap <C-Down> :m .+1<CR>==
+inoremap <C-Up> <Esc>:m .-2<CR>==gi
+inoremap <C-Down> <Esc>:m .+1<CR>==gi
+vnoremap <C-Up> :m '<-2<CR>gv==gv
+vnoremap <C-Down> :m '>+1<CR>gv==gv
+tnoremap <Esc> <C-\><C-n> <CR>
+
 " Nvim Config
 set number
 "set cmdheight=0
